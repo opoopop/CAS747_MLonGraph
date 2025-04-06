@@ -1,6 +1,6 @@
 # CAS747 machine learning on graph
 
-This is the codeof LLM-GNN. The code is build from scratch.
+This is the code of LLM-GNN. The code is build from scratch.
 
 ./notebooks include some jupyter notebooks with the result.  notebooks/citeseer_prompt_test.ipynb & notebooks/Cora_prompt_test.ipynb is result of section C  and notebooks/Cora_post_filter.ipynb is the section D.
 
@@ -40,7 +40,7 @@ Steps to run the code and quickly test the result.
    final accuracy of GNN: 72.2 %
    ```
 
-   if you want to use post filtering ,and wait for 1 mins
+   if you want to use post filtering ,do this and wait for 1 mins
 
    ```python
    python3 src/main.py --post_filter True
