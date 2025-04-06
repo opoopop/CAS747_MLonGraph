@@ -55,8 +55,8 @@ Steps to run the code and quickly test the result.
    finally the get the right faiss
 
    ```python
-   pip install faiss-gpu
-   #pip install faiss-cpu # this is cpu version
+   conda install faiss-gpu
+   #conda install faiss-cpu # this is cpu version
    ```
 
    
