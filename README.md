@@ -1,6 +1,6 @@
 # Readme
 
-This is the codeof LLM-GNN. The code is build from scratch.
+This is the code of LLM-GNN. The code is build from scratch.
 
 ./notebooks include some jupyter notebooks with the result.  notebooks/citeseer_prompt_test.ipynb & notebooks/Cora_prompt_test.ipynb is result of section C  and notebooks/Cora_post_filter.ipynb is the section D.
 
@@ -53,8 +53,8 @@ Steps to run the code and quickly test the result.
    finally the get the right faiss
 
    ```python
-   pip install faiss-gpu
-   #pip install faiss-cpu # this is cpu version
+   conda install faiss-gpu
+   #conda install faiss-cpu # this is cpu version
    ```
 
    
