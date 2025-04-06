@@ -1,0 +1,1 @@
+final accuracy of GNN on Cora with prompt few_shot: 74.2 %
