@@ -2,7 +2,9 @@
 
 This is the code of LLM-GNN. The code is build from scratch.
 
-./notebooks include some jupyter notebooks with the result.  notebooks/citeseer_prompt_test.ipynb & notebooks/Cora_prompt_test.ipynb is result of section C  and notebooks/Cora_post_filter.ipynb is the section D.
+github link of my code:[opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph)
+
+[CAS747_MLonGraph/notebooks at main · opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph/tree/main/notebooks) include some jupyter notebooks with the result.  [CAS747_MLonGraph/notebooks/citeseer_prompt_test.ipynb at main · opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph/blob/main/notebooks/citeseer_prompt_test.ipynb) & [CAS747_MLonGraph/notebooks/Cora_prompt_test.ipynb at main · opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph/blob/main/notebooks/Cora_prompt_test.ipynb) shows the  result of section C  and [CAS747_MLonGraph/notebooks/Cora_post_filter.ipynb at main · opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph/blob/main/notebooks/Cora_post_filter.ipynb) is the section D.
 
 Steps to run the code and quickly test the result.
 
@@ -18,7 +20,7 @@ Steps to run the code and quickly test the result.
    pip install -r requirements.txt
    ```
 
-   for pytorch it need torch==2.5.0, find your version from [Previous PyTorch Versions | PyTorch](https://pytorch.org/get-started/previous-versions/)
+   for pytorch it needs torch==2.5.0, find your version from [Previous PyTorch Versions | PyTorch](https://pytorch.org/get-started/previous-versions/)
 
    ```python
    # ROCM 6.1 (Linux only)
@@ -53,8 +55,8 @@ Steps to run the code and quickly test the result.
    finally the get the right faiss
 
    ```python
-   conda install faiss-gpu
-   #conda install faiss-cpu # this is cpu version
+   pip install faiss-gpu
+   #pip install faiss-cpu # this is cpu version
    ```
 
    
@@ -81,7 +83,7 @@ Steps to run the code and quickly test the result.
    final accuracy of GNN: 72.2 %
    ```
 
-   if you want to use post filtering ,and wait for 1 mins
+   if you want to use post filtering ,and wait for 1 min
 
    ```python
    python3 src/main.py --post_filter True
@@ -118,4 +120,6 @@ Steps to run the code and quickly test the result.
    --filter_num # number of nodes left after post filtering , default=300
    ```
 
-   The test result is on result/result.txt
+   The final test result store on [CAS747_MLonGraph/result/result.txt at main · opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph/blob/main/result/result.txt).
+   
+   Additionally [CAS747_MLonGraph/notebooks/dfaware_selection.ipynb at main · opoopop/CAS747_MLonGraph](https://github.com/opoopop/CAS747_MLonGraph/blob/main/notebooks/dfaware_selection.ipynb) has the implement of difficulty-aware active node selection.
