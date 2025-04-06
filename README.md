@@ -66,7 +66,8 @@ Steps to run the code and quickly test the result.
    Example using few shot prompt:
 
    ```python
-   python3 src/main.py
+   python src/main.py
+   # or python3 src/main.py
    ```
 
    result:
@@ -86,7 +87,8 @@ Steps to run the code and quickly test the result.
    if you want to use post filtering ,and wait for 1 min
 
    ```python
-   python3 src/main.py --post_filter True
+   python src/main.py --post_filter True
+   #or python3 src/main.py --post_filter True
    ```
 
    result:
